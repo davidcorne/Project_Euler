@@ -1,0 +1,5 @@
+#!/bin/sh
+cat Data/words.txt | sed -e 's/,/,\n/g' -e 's/,//g' -e 's/"//g' > temp.txt
+problem042.py
+rm temp.txt
+
